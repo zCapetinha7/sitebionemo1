@@ -19,7 +19,7 @@
   --headline: hsl(0, 0%, 100%);
   --paragraph: hsla(0, 0%, 100%, 0.658);
   --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
-}
+
   font-size: 62.5%;
 
   --nav-height: 7.2rem;
@@ -37,7 +37,6 @@ body {
 
 body {
   font-size: 1.6rem;
-
   text-align: center;
 
   overflow: overlay;
@@ -239,11 +238,11 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 }
 
 #contact li path,
-#navigation button.open-menu path[stroke*="#3c00ff"] {
+#navigation button.open-menu path[stroke*="#00856F"] {
   stroke: var(--primary-color);
 }
 
-#navigation.scroll button.open-menu path[stroke*="#3c00ff"] {
+#navigation.scroll button.open-menu path[stroke*="#00856F"] {
   stroke: var(--paragraph-2);
 }
 
