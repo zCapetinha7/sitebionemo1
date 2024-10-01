@@ -9,7 +9,7 @@
 }
 
 :root {
-  --hue: 270; /* Ajuste para um tom de roxo */
+  --hue: 90;
   --primary-color: hsl(var(--hue), 92%, 43%);
   --primary-hover: hsl(var(--hue), 92%, 33%);
   --secundary-color: hsl(0, 0%, 5%);
