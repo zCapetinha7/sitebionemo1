@@ -87,7 +87,13 @@ img {
   max-width: 100%;
   color: var(--paragraph);
 }
-
+.profile {
+ width: 150px;
+ height: 150px;
+ margin-top: auto;
+ margin-left: 4.9rem;
+ border-radius: 100%;
+}
 section {
   padding-block: 10rem;
   padding-inline: 2rem;
