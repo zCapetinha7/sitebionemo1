@@ -89,7 +89,7 @@ img {
 }
 .profile {
     width: 50px; /* Ajuste o tamanho conforme necessário */
-    height: 100px; /* Mantém a proporção */
+    height: 50px; /* Mantém a proporção */
     border-radius: 50%; /* Faz a imagem ficar redonda */
     object-fit: cover; /* Garante que a imagem preencha o espaço */
 }
