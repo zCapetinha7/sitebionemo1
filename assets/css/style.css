@@ -1662,4 +1662,55 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     width: 9rem;
     height: 2rem;
   }
+  
+.badge-container {
+ display: flex;
+ justify-content: center;
+ gap: 5px;
+ position: relative;
+}
+
+.badge img {
+ width: 30px;
+ height: 30px;
+ background-size: cover;
+}
+
+.badge-info {
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ transform: translateX(-50%);
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity 0.3s ease-in-out;
+ background-color: rgba(54, 55, 57, 0.8);
+ color: #FFFFFF;
+ padding: 5px;
+ border-radius: 5px;
+ font-size: 9px;
+ white-space: nowrap;
+}
+
+.badge:hover .badge-info {
+    opacity: 1;
+}
+
+.icone-container {
+ padding-top: 45px;
+ display: flex;
+ justify-content: center;
+}
+
+.icone img {
+ width: 35px;
+ height: 35px;
+ border-radius: 100%;
+ padding: 9px;
+}
+
+.icone img:hover  {
+ background: rgba(255, 255, 255, 0.25);
+ transform: scale(1.09);
+ transition: ease-out all;
 }
