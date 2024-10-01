@@ -36,7 +36,8 @@ body {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 14px; /* Ajuste conforme necessário */
+
   text-align: center;
 
   overflow: overlay;
