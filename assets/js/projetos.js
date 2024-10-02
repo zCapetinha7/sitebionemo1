@@ -67,7 +67,7 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
     </a>
   </div>
 </div>
-    <p>Um servidor de um bot focado em entretenimento e diversão para seu servidor. </p>
+    <p>Um bot focado em entretenimento e diversão para seu servidor. </p>
       <p><b>𝐂𝐚𝐫𝐠𝐨𝐬:</b> Developer - Creator - Helper</p>
         </div>
         <div></div>
