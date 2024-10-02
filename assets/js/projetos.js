@@ -8,7 +8,7 @@ function projetos(section) {
           <h3>ORIGINAL GIFS™ 🍇</h3>
           <div class="img-wrapper">
             <img
-              src="./assets/NemoAvatar.png"
+              src="./assets/McKevin.gif"
               alt="Original Gifs"
             />
             <div class="buttons">
