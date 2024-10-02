@@ -1,18 +1,18 @@
 function projetos(section) {
   section.innerHTML = `<header>
-      <h2>Projetos</h2>
+      <h2>PROJETO</h2>
     </header>
     <div class="content">
       <div class="cards">
         <div class="card">
-          <h3>Orange Evolution</h3>
+          <h3>ORIGINAL GIFS™ 🍇</h3>
           <div class="img-wrapper">
             <img
-              src="./assets/images/projects/orange-evolution.gif"
-              alt="GIF do projeto Orange Evolution."
+              src="./assets/NemoAvatar.png"
+              alt="Original Gifs"
             />
             <div class="buttons">
-              <a href="https://github.com/squad-30/OrangeEvolution-Squad30" target="_blank" title="Repositório no Github">
+              <a href="https://discord.gg/2vpK7UPzyB" target="_blank" title="Entrar">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
