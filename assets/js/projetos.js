@@ -49,8 +49,7 @@ function projetos(section) {
   </div>
 </div>
 <p>
-  Querida Família Estelar, Sejam todos calorosamente recebidos na nossa amada StarFamily! Aqui, a alegria é contagiante, as risadas são intermináveis e cada membro é uma peça essencial para construir nossa constelação de amizade.
-</p>
+A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, fortalecer laços e cultivar novas amizades.</p>
 <p>Cargos: Fundador - Posse</p>
         </div>
         <div class="card">
