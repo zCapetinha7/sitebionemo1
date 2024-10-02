@@ -36,7 +36,7 @@ function projetos(section) {
         <div class="card">
 <h3>StarsFamily™ ⭐</h3>
 <div class="img-wrapper">
-  <img src="./assets/NemoAvatar.png" alt="Original Gifs" />
+  <img src="./assets/standard.gif" alt="Original Gifs" />
   <div class="buttons">
     <a href="https://discord.gg/2vpK7UPzyB" target="_blank" title="Entrar" id="enter-btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -55,7 +55,7 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
         <div class="card">
           <h3>Sininho ✨</h3>
 <div class="img-wrapper">
-  <img src="./assets/NemoAvatar.png" alt="Original Gifs" />
+  <img src="./assets/Sininho.png" alt="Original Gifs" />
   <div class="buttons">
     <a href="https://discord.gg/2vpK7UPzyB" target="_blank" title="Entrar" id="enter-btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
