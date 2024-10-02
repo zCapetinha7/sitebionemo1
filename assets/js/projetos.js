@@ -53,36 +53,26 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
 <p>Cargos: Fundador - Posse</p>
         </div>
         <div class="card">
-          <h3>3™ ⭐</h3>
-          <div class="img-wrapper">
-            <img
-              src="./assets/NemoAvatar.png"
-              alt="Original Gifs"
-            />
-            <div class="buttons">
-              </a>
-              <a href="https://discord.gg/2vpK7UPzyB" target="_blank" title="Entrar">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7 9.005 9.005 0 0 0-17.554 0A9.005 9.005 0 0 0 12 19zm0-2.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <p>
-            Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.
-          </p>
-          <p>HTML - CSS - JS</p>
+<h3>StarsFamily™ ⭐</h3>
+<div class="img-wrapper">
+  <img src="./assets/NemoAvatar.png" alt="Original Gifs" />
+  <div class="buttons">
+    <a href="https://discord.gg/2vpK7UPzyB" target="_blank" title="Entrar" id="enter-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path
+          d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7 9.005 9.005 0 0 0-17.554 0A9.005 9.005 0 0 0 12 19zm0-2.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+<p>
+A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, fortalecer laços e cultivar novas amizades.</p>
+<p>Cargos: Fundador - Posse</p>
         </div>
         <div class="card">
-          <h3>StarsFamily™ ⭐</h3>
+          <h3>🩸7LifeDrugs</h3>
           <div class="img-wrapper">
             <img
               src="./assets/NemoAvatar.png"
@@ -106,12 +96,11 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
             </div>
           </div>
           <p>
-            Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.
-          </p>
-          <p>HTML - CSS - JS</p>
+O servidor 7LifeDrugs é uma comunidade de gestão colaborativa, onde nos tornamos administradores de servidores com o objetivo de ajudar uns aos outros.          </p>
+          <p>**Cargos:** Creator - Fundador - Posse</p>
         </div>
         <div class="card">
-          <h3>StarsFamily™ ⭐</h3>
+          <h3>Sininho ✨</h3>
           <div class="img-wrapper">
             <img
               src="./assets/NemoAvatar.png"
@@ -134,13 +123,11 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
               </a>
             </div>
           </div>
-          <p>
-            Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.
-          </p>
-          <p>HTML - CSS - JS</p>
+          <p>Um servidor de um bot focado em entretenimento e diversão para seu servidor. </p>
+          <p>**Cargos:** Developer - Creator - Helper</p>
         </div>
         <div class="card">
-          <h3>StarsFamily™ ⭐</h3>
+           <h3>Sininho ✨</h3>
           <div class="img-wrapper">
             <img
               src="./assets/NemoAvatar.png"
@@ -163,10 +150,8 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
               </a>
             </div>
           </div>
-          <p>
-            Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.
-          </p>
-          <p>HTML - CSS - JS</p>
+          <p>Um servidor com um bot de economia repleto de comandos para diversão, gerenciamento financeiro e entretenimento, oferecendo diversas maneiras de interagir e se divertir.</p>
+          <p>**Cargos:** Developer - Creator - Helper</p>
         </div>
         <div></div>
         <div class="card">
@@ -185,7 +170,7 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
           </svg>
           <p>
             Aprendizado constante! <br />
-            Em breve muitos outros projetos.
+            Em breve muitos outros servidores/bots.
           </p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
