@@ -1,7 +1,7 @@
 function desafios(section) {
   section.innerHTML = 
     `<header>
-      <h4>Projetos</h4>
+      <h4>PROJETOS</h4>
       <h2>Desafio 21 dias de código</h2>
       <p>
         Desafio da
