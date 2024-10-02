@@ -56,7 +56,6 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
           <h3>Sininho ✨</h3>
 <div class="img-wrapper">
   <img src="./assets/Sininho.png" alt="Original Gifs" />
-            />
             <div class="buttons">
               </a>
               <a href="https://discord.com/oauth2/authorize?client_id=1053040693020479519&permissions=1099545406528&integration_type=0&scope=bot" target="_blank" title="Entrar">
