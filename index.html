@@ -304,27 +304,22 @@
       </label>
     </div>
 <script>
-  // Função que adiciona um floco de neve no local onde o mouse está
-  function createSnowflake(x, y) {
+  document.addEventListener("mousemove", function (e) {
+    // Cria um novo floco de neve
     const snowflake = document.createElement("div");
-    snowflake.classList.add("snowflake");
-    
-    // Posiciona o floco de neve no local do mouse
-    snowflake.style.left = `${x}px`;
-    snowflake.style.top = `${y}px`;
-    
-    // Adiciona o floco de neve ao corpo da página
+    snowflake.className = "snowflake";
+
+    // Define a posição do floco de acordo com o movimento do mouse
+    snowflake.style.left = `${e.pageX}px`;
+    snowflake.style.top = `${e.pageY}px`;
+
+    // Adiciona o floco de neve ao corpo do site
     document.body.appendChild(snowflake);
 
-    // Remove o floco de neve após 2 segundos (tempo da animação)
+    // Remove o floco de neve após a animação de desaparecer
     setTimeout(() => {
       snowflake.remove();
-    }, 2000);
-  }
-
-  // Adiciona um ouvinte para rastrear o movimento do mouse
-  document.addEventListener("mousemove", (event) => {
-    createSnowflake(event.pageX, event.pageY); // Cria um floco na posição do mouse
+    }, 1000); // 1 segundo para coincidir com a duração da animação
   });
 </script>
   </body>
