@@ -1,6 +1,6 @@
 function projetos(section) {
   section.innerHTML = `<header>
-      <h2>PROJETO</h2>
+      <h2>𝐒𝐄𝐑𝐕𝐈𝐃𝐎𝐑𝐄𝐒</h2>
     </header>
     <div class="content">
       <div class="cards">
@@ -31,7 +31,7 @@ function projetos(section) {
           <p>
             Servidor focado em disponibilizar gifs e icons e decorações para seu perfil.💜
           </p>
-          <p><b>Cargo:</b> Creator - Fundador</p>
+          <p><b>𝐂𝐚𝐫𝐠𝐨𝐬:</b> Creator - Fundador</p>
         </div>
         <div class="card">
 <h3>StarsFamily™ ⭐</h3>
@@ -50,7 +50,7 @@ function projetos(section) {
 </div>
 <p>
 A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, fortalecer laços e cultivar novas amizades.</p>
-<p><b>Cargos:</b> Fundador - Posse</p>
+<p><b>𝐂𝐚𝐫𝐠𝐨𝐬:</b> Fundador - Posse</p>
         </div>
         <div class="card">
 <h3>StarsFamily™ ⭐</h3>
@@ -69,7 +69,7 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
 </div>
 <p>
 A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, fortalecer laços e cultivar novas amizades.</p>
-<p>Cargos: Fundador - Posse</p>
+<p>𝐂𝐚𝐫𝐠𝐨𝐬: Fundador - Posse</p>
         </div>
         <div class="card">
           <h3>🩸7LifeDrugs</h3>
@@ -124,7 +124,7 @@ O servidor 7LifeDrugs é uma comunidade de gestão colaborativa, onde nos tornam
             </div>
           </div>
           <p>Um servidor de um bot focado em entretenimento e diversão para seu servidor. </p>
-          <p><b>Cargos:</b> Developer - Creator - Helper</p>
+          <p><b>𝐂𝐚𝐫𝐠𝐨𝐬:</b> Developer - Creator - Helper</p>
         </div>
         <div class="card">
            <h3>Koala 🐨</h3>
@@ -151,7 +151,7 @@ O servidor 7LifeDrugs é uma comunidade de gestão colaborativa, onde nos tornam
             </div>
           </div>
           <p>Um servidor com um bot de economia repleto de comandos para diversão, gerenciamento financeiro e entretenimento, oferecendo diversas maneiras de interagir e se divertir.</p>
-          <p><b>Cargos:</b> Developer - Creator - Helper</p>
+          <p><b>𝐂𝐚𝐫𝐠𝐨𝐬:</b> Developer - Creator - Helper</p>
         </div>
         <div></div>
         <div class="card">
