@@ -53,7 +53,24 @@ body.light-mode {
   --paragraph: rgb(32, 32, 32);
   --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 3%);
 }
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white; /* Cor do floco de neve */
+  border-radius: 50%; /* Formato redondo */
+  pointer-events: none; /* Impede interação com o cursor */
+  opacity: 0.8; /* Transparência */
+  animation: fadeOut 2s ease-out forwards; /* Animação para desaparecer */
+}
 
+/* Animação para que os flocos desapareçam gradualmente */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(20px); /* Movimenta um pouco para baixo enquanto desaparece */
+  }
+}
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
