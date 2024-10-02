@@ -1,6 +1,6 @@
 function projetos(section) {
   section.innerHTML = `<header>
-      <h2>𝐒𝐄𝐑𝐕𝐈𝐃𝐎𝐑𝐄𝐒</h2>
+      <h2>𝐂𝐑𝐈𝐀𝐃𝐎𝐑</h2>
     </header>
     <div class="content">
       <div class="cards">
