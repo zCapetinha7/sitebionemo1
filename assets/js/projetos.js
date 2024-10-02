@@ -29,38 +29,60 @@ function projetos(section) {
             </div>
           </div>
           <p>
-            Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.
+            Servidor focado em disponibilizar gifs e icons e decorações para seu perfil.💜
           </p>
-          <p>HTML - CSS - JS - NodeJS - Express - SQLite</p>
+          <p>Comunidade - Gifs - Icons - Bots</p>
         </div>
         <div class="card">
-          <h3>StarsFamily™ ⭐</h3>
-          <div class="img-wrapper">
-            <img
-              src="./assets/NemoAvatar.png"
-              alt="Original Gifs"
-            />
-            <div class="buttons">
-              </a>
-              <a href="https://discord.gg/2vpK7UPzyB" target="_blank" title="Entrar">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7 9.005 9.005 0 0 0-17.554 0A9.005 9.005 0 0 0 12 19zm0-2.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <p>
-            Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.
-          </p>
-          <p>HTML - CSS - JS</p>
+ <h3>StarsFamily™ ⭐</h3>
+<div class="img-wrapper">
+  <img src="./assets/NemoAvatar.png" alt="Original Gifs" />
+  <div class="buttons">
+    <a href="https://discord.gg/2vpK7UPzyB" target="_blank" title="Entrar" id="enter-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path
+          d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7 9.005 9.005 0 0 0-17.554 0A9.005 9.005 0 0 0 12 19zm0-2.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+
+<!-- Mensagem que aparecerá e desaparecerá -->
+<div id="message" class="message">Convite indisponível</div>
+
+<p>
+  Querida Família Estelar, Sejam todos calorosamente recebidos na nossa amada StarFamily! Aqui, a alegria é contagiante, as risadas são intermináveis e cada membro é uma peça essencial para construir nossa constelação de amizade.
+</p>
+<p>HTML - CSS - JS</p>
+
+.message {
+  display: none; /* Inicialmente escondida */
+  background-color: #f44336; /* Vermelha para chamar atenção */
+  color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.message.show {
+  display: block; /* Exibir a mensagem */
+}
+document.getElementById('enter-btn').addEventListener('click', function(event) {
+  event.preventDefault(); // Impede o comportamento padrão de abrir o link
+
+  const message = document.getElementById('message');
+
+  // Mostra a mensagem
+  message.classList.add('show');
+
+  // Define um tempo para ocultar a mensagem após 3 segundos (3000ms)
+  setTimeout(() => {
+    message.classList.remove('show');
+  }, 3000); // Tempo em milissegundos
+});
         </div>
         <div class="card">
           <h3>StarsFamily™ ⭐</h3>
