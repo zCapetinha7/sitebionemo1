@@ -82,7 +82,10 @@ ul {
 a {
   text-decoration: none;
 }
-
+#enter-btn {
+  pointer-events: none; /* Desativa cliques */
+  opacity: 0.5; /* Visualmente desativa o botão */
+}
 img {
   max-width: 100%;
   color: var(--paragraph);
