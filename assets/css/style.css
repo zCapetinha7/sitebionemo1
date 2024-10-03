@@ -53,28 +53,7 @@ body.light-mode {
   --paragraph: rgb(32, 32, 32);
   --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 3%);
 }
-  .snowflake {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    pointer-events: none; /* Desativa interações com o mouse */
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); /* Efeito de brilho */
-    animation: fadeOut 1s forwards; /* Animação para desaparecer */
-  }
 
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0.5); /* Desaparece diminuindo */
-    }
-  }
-+
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -122,6 +101,27 @@ img {
     border-radius: 50%; /* Faz a imagem ficar redonda */
     object-fit: cover; /* Garante que a imagem preencha o espaço */
 }
+  .snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none; /* Desativa interações com o mouse */
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); /* Efeito de brilho */
+    animation: fadeOut 1s forwards; /* Animação para desaparecer */
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5); /* Desaparece diminuindo */
+    }
+  }
 section {
   padding-block: 10rem;
   padding-inline: 2rem;
