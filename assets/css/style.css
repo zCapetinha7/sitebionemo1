@@ -88,13 +88,12 @@ body.light-mode {
   border-radius: 1rem;
   background: var(--paragraph);
 }
-.imagem-redonda {
-  width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
-  height: 150px; /* Certifique-se de que a altura e largura sejam iguais */
-  border-radius: 50%; /* Deixa a imagem redonda */
-  object-fit: cover; /* Garante que a imagem se ajuste ao espaço circular */
+.imagem-customizada {
+  width: 120px;  /* Defina a largura menor para a imagem */
+  height: 100px; /* Reduza a altura da imagem */
+  border-radius: 60%; /* Aumente o valor do border-radius para deixar mais arredondado */
+  object-fit: cover; /* Ajusta a imagem para caber no contêiner sem distorção */
 }
-
 .wrapper {
   width: min(50rem, 100%);
 
