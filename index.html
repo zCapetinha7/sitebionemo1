@@ -164,7 +164,7 @@
     <section id="knowledge">
       <div class="wrapper">
         <header>
-          <h2>𝐄𝐌 𝐃𝐄𝐒𝐄𝐍𝐕𝐎𝐋𝐕𝐈𝐌𝐄𝐍𝐓𝐎</h2>
+          <h2>𝟕𝐋𝐈𝐅𝐄𝐃𝐑𝐔𝐆𝐒</h2>
         </header>
         <div class="content">
           <div class="cards">
@@ -195,10 +195,20 @@
         </div>
       </div> 
     </section>
-    <audio autoplay loop>
-  <source src="Invisivelpt2.mp3" type="audio/mp3">
+<audio id="background-music" loop>
+  <source src="Invisivelpt2.mp3" type="audio/mpeg">
   Seu navegador não suporta o elemento de áudio.
 </audio>
+
+<script>
+  // Detecta o primeiro clique na página e toca a música
+  document.addEventListener("click", function() {
+    const music = document.getElementById('background-music');
+    if (music.paused) {
+      music.play();
+    }
+  });
+</script>
     <section id="contact">
     </section>
     
