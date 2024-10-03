@@ -88,6 +88,12 @@ body.light-mode {
   border-radius: 1rem;
   background: var(--paragraph);
 }
+.imagem-redonda {
+  width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 150px; /* Certifique-se de que a altura e largura sejam iguais */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  object-fit: cover; /* Garante que a imagem se ajuste ao espaço circular */
+}
 
 .wrapper {
   width: min(50rem, 100%);
