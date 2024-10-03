@@ -144,24 +144,6 @@ section header h2 {
 
   color: var(--primary-color);
 }
-body {
-  background-color: white; /* Cor de fundo para o tema claro */
-  color: black; /* Cor do texto para o tema claro */
-}
-
-body.dark-theme {
-  background-color: black; /* Cor de fundo para o tema escuro */
-  color: white; /* Cor do texto para o tema escuro */
-}
-.header, .footer, .card {
-  background-color: white; /* tema claro */
-  color: black; /* tema claro */
-}
-
-.header.dark-theme, .footer.dark-theme, .card.dark-theme {
-  background-color: black; /* tema escuro */
-  color: white; /* tema escuro */
-}
 section h3 {
   color: var(--headline);
 }
