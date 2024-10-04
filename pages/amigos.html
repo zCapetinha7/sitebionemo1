@@ -71,101 +71,26 @@
 </head>
 <body>
 
-    <nav id="navigation">
-      <div class="wrapper">
-        <a class="logo close" href="#home"> 𝗥𝗲𝗮𝗹 𝗡𝗲𝗺𝗼 </a>
+<div class="navbar">
+    <div class="left">
+        <button class="button-home" onclick="window.location.href='../index.html'">Home</button>
+    </div>
+    <div class="center-text">Real Nemo</div>
+    <div class="right">
+        <a href="https://discord.com/channels/1006703572601294888/1059233145406357594">Anúncios</a>
+        <a href="https://discord.com/channels/1006703572601294888/1133080431357591653">Suporte</a>
+        <a href="https://discord.com/channels/1006703572601294888/1059233147889385633">Diretrizes</a>
+    </div>
+</div>
 
-        <div class="menu">
-          <ul>
-            <li>
-              <a id="aboutNav" class="close" href="https://instagram.com/realbeeh">𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺</a>
-            </li>
-            <li>
-              <a id="projectsNav" class="close" href="https://youtu.be/dkWyAlBUY20?si=kySS5i2LsmhxqAn2">𝗬𝗼𝘂𝘁𝘂𝗯𝗲</a>
-            </li>
-            <li>
-              <a id="knowledgeNav" class="close" href="https://discord.gg/2vpK7UPzyB"
-                >𝗦𝗲𝗿𝘃𝗶𝗱𝗼𝗿</a
-              >
-            </li>
-            <li>
-              <a id="knowledgeNav" class="close" href="./pages/amigos.html"
-                >Amigos</a
-              >
-            </li>
-            <li>
-              <a id="contactNav" class="close" href="https://www.threads.net/@realbeeh">𝗧𝗵𝗿𝗲𝗮𝗱𝘀</a>
-            </li>
-          </ul>
-        </div>
-
-        <button
-          aria-expanded="false"
-          aria-label="Abrir menu"
-          class="open-menu open"
-        >
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 20H30"
-              stroke="#00856F"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M10 12H30"
-              stroke="#00856F"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M18 28L30 28"
-              stroke="#00856F"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-
-        <button
-          aria-expanded="true"
-          aria-label="Fechar menu"
-          class="close-menu close"
-        >
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30 10L10 30M10 10L30 30"
-              stroke="#FFFAF1"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-      </div>
-    </nav>
 </body>
 
     <div class="container">
         <section style="margin-top: 9%;">
             <div class="row">
                 <div class="col-sm-6 my-1">
-                    <h2 class="fw-bold">Membros Importantes</h2>
-                    <p class="command-descreption">Veja os membros importantes na Original Gifs</p>
+                    <h2 class="fw-bold">Lista Amigos</h2>
+                    <p class="command-descreption">Veja a Lista de amigos de perfeitodemais</p>
                 </div>
             <hr>
         </section>
@@ -175,15 +100,15 @@
                 <div class="card p-3">
                     <h5>Categorias</h5>
                     <hr />
-                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; Todos os membros</button>
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; Todos os amigos</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Fundadores</button>
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Melhores amigos</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; Administradores</button>
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; 7LifeDrugs</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Patrocinadores</button>
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Original Gifs</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Boosters Premium</button>
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Amigos</button>
                     
                 </div>
             </div>
@@ -199,16 +124,16 @@
                             <div class="accordion accordion-flush mt-2" id="nemo">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fnemo">
-                                             Nemo 🔮 / perfeitodemais&nbsp; <span class="command-descreption">- 1037185561422737468</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ffada">
+                                             Fada Winx 🦋 / fadawinx&nbsp; <span class="command-descreption">- 514255717377638403</span>
                                         </button>
                                     </h2>
                                     <div id="fnemo" class="accordion-collapse collapse" data-bs-parent="#nemo">
                                         <div class="accordion-body">
-                                            <span>Fundador e Creator</span> <br />
+                                            <span>Esposa do Nemo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Fundador des de: 9 de agosto de 2022 às 20:20
+                                                    A mior
                                                 
                                             </span>
                                         </div>
@@ -220,16 +145,16 @@
                             <div class="accordion accordion-flush mt-2" id="fada">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ffada">
-                                             Fada Winx 🦋 / fadawinx&nbsp; <span class="command-descreption">- 514255717377638403</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fantivocekkj.">
+                                             B / antivocekkj.&nbsp; <span class="command-descreption">- 813856336176611379</span>
                                         </button>
                                     </h2>
                                     <div id="ffada" class="accordion-collapse collapse" data-bs-parent="#fada">
                                         <div class="accordion-body">
-                                            <span>Fundadora e Posse</span> <br />
+                                            <span>Irmã de Nemo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Fundadora des de: 20 de setembro de 2023 às 15:27
+                                                   Faz o L    
                                                 
                                             </span>
                                         </div>
@@ -241,16 +166,15 @@
                             <div class="accordion accordion-flush mt-2" id="bella">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fbella">
-                                             Bella 🌸 / antivocekkj.&nbsp; <span class="command-descreption">- 813856336176611379</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcontadonemo">
+                                            Capetinha 🩸 / capetiinha &nbsp; <span class="command-descreption">- 874026716228636733</span>
                                         </button>
                                     </h2>
                                     <div id="fbella" class="accordion-collapse collapse" data-bs-parent="#bella">
                                         <div class="accordion-body">
-                                            <span>Fundadora e Administradora</span> <br />
+                                            <span>Conta do Nemo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Fundadora des de: 28 de março de 2024 às 18:52
                                                 
                                             </span>
                                         </div>
@@ -267,16 +191,15 @@
                             <div class="accordion accordion-flush mt-2" id="help">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
-                                             Indefinido / Indefinido&nbsp; <span class="command-descreption">- Indefinido</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmenor">
+                                             ! menor 炎 / relaxaputa &nbsp; <span class="command-descreption">- 441270856845623306</span>
                                         </button>
                                     </h2>
                                     <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
                                         <div class="accordion-body">
-                                            <span>Indefinido</span> <br />
+                                            <span>Amigo antigo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Indefinido
                                                 
                                             </span>
                                         </div>
@@ -288,16 +211,16 @@
                             <div class="accordion accordion-flush mt-2" id="ping">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fping">
-                                             Indefinido / Indefinido&nbsp; <span class="command-descreption">- Indefinido</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fyblants">
+                                             ! 🩸 yBlants Shelby. 愛 / yblants &nbsp; <span class="command-descreption">- 928509385100099664</span>
                                         </button>
                                     </h2>
                                     <div id="fping" class="accordion-collapse collapse" data-bs-parent="#ping">
                                         <div class="accordion-body">
-                                            <span>Indefinido</span> <br />
+                                            <span>Amigo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Indefinido
+                                                    
                                                 
                                             </span>
                                         </div>
@@ -309,16 +232,16 @@
                             <div class="accordion accordion-flush mt-2" id="invite">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finvite">
-                                             Indefinido / Indefinido&nbsp; <span class="command-descreption">- Indefinido</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsunhell">
+                                             ! Sun Hell 🍀 🌙 / sun_hell &nbsp; <span class="command-descreption">- 1127396210190327910</span>
                                         </button>
                                     </h2>
                                     <div id="finvite" class="accordion-collapse collapse" data-bs-parent="#invite">
                                         <div class="accordion-body">
-                                            <span>Indefinido</span> <br />
+                                            <span>Amigo antigo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Indefinido
+                                                    
                                                 
                                             </span>
                                         </div>
@@ -335,16 +258,16 @@
                             <div class="accordion accordion-flush mt-2" id="leaderboard">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fleaderboard">
-                                             Indefinido / Indefinido&nbsp; <span class="command-descreption">- Indefinido</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fkvnzin">
+                                             $ 𝙆𝙑𝙉𝙕𝙄𝙉 ☯ / kvnzin_ &nbsp; <span class="command-descreption">- 910200681858744340</span>
                                         </button>
                                     </h2>
                                     <div id="fleaderboard" class="accordion-collapse collapse" data-bs-parent="#leaderboard">
                                         <div class="accordion-body">
-                                            <span>Indefinido</span> <br />
+                                                <span>Amigo antigo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Indefinido
+                                                    <b>IG:</b> @Kevinho_letre</b>
                                                 
                                             </span>
                                         </div>
@@ -362,15 +285,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freactionrole">
-                                             Indefinido / Indefinido&nbsp; <span class="command-descreption">- Indefinido</span>
+                                             bb_kk / micadometimeti&nbsp; <span class="command-descreption">- 984609704938438759</span>
                                         </button>
                                     </h2>
                                     <div id="freactionrole" class="accordion-collapse collapse" data-bs-parent="#reactionrole">
                                         <div class="accordion-body">
-                                            <span>Indefinido</span> <br />
+                                            <span>Amigos</span> <br />
                                             <span class="examples">
                                                 
-                                                    Indefinido
+                                                    
                                                 
                                             </span>
                                         </div>
@@ -382,16 +305,16 @@
                             <div class="accordion accordion-flush mt-2" id="slowmode">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fslowmode">
-                                             Indefinido / Indefinido&nbsp; <span class="command-descreption">- Indefinido</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcontadonemo">
+                                             Berlim 💢 / puraelegancia &nbsp; <span class="command-descreption">- 1058488974236196975</span>
                                         </button>
                                     </h2>
                                     <div id="fslowmode" class="accordion-collapse collapse" data-bs-parent="#slowmode">
                                         <div class="accordion-body">
-                                            <span>Indefinido</span> <br />
+                                            <span>Conta do Nemo</span> <br />
                                             <span class="examples">
                                                 
-                                                    Indefinido
+                                                    
                                                 
                                             </span>
                                         </div>
