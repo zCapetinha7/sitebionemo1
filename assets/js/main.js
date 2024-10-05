@@ -123,7 +123,6 @@ ScrollReveal({
   #contact,
   #contact header`
 );
-
-toggle.addEventListener("change", () => {
-  document.body.classList.toggle("light-mode");
-});
+document.getElementById("theme-toggle").addEventListener("click", function() {
+    document.body.classList.toggle("light-mode");
+});// main.js
