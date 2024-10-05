@@ -802,52 +802,39 @@ body.light-mode #home img#notebook-2-white {
 }
 
 /*===== KNOWLEDGE ===============================================*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#knowledge header h2 {
+  margin-bottom: 6rem;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+#knowledge .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 }
 
-.wrapper {
-    padding: 50px 0;
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
+#knowledge .card {
+  padding: 2.8rem;
+  text-align: left;
+
+  background: var(--secundary-color);
+
+  border-radius: 0.6rem;
+  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+
+  transition: 400ms;
 }
 
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+#knowledge .card:hover {
+  background: var(--third-color);
 }
 
-.card {
-    position: relative;
-    width: 300px;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-    overflow: hidden;
-    text-align: left;
+#knowledge .card h3 {
+  margin-block: 1.6rem;
 }
 
-.card:hover {
-    transform: rotate3d(0.5, 1, 0, 30deg);
-    background-position: 80% 20%
-
+#knowledge .card img {
+  width: 10rem;
+}
 /*===== CONTACT ===============================================*/
 
 #contact {
