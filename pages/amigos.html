@@ -103,7 +103,7 @@
                     
                         <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Melhores amigos</button>
                               
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Amigos</button>
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Amigos</button>
                     
                 </div>
             </div>
@@ -243,11 +243,7 @@
                                 </div>
                             </div>
                         
-                    </div>
-                
-                    
-                    <div class="commands-section" id="Category3">
-                        
+                    </div>                        
                             
                             <div class="accordion accordion-flush mt-2" id="kvnzin">
                                 <div class="accordion-item">
@@ -269,11 +265,7 @@
                                 </div>
                             </div>
                         
-                    </div>
-                
-                    
-                    <div class="commands-section" id="Category3">
-                        
+                    </div>                        
                             
                             <div class="accordion accordion-flush mt-2" id="micadometimeti">
                                 <div class="accordion-item">
@@ -337,22 +329,12 @@
                 document.getElementById("CategoryBtn1").classList.remove("active");
                 document.getElementById("Category1").setAttribute("hidden", "");
             
-                document.getElementById("CategoryBtn2").classList.remove("active");
-                document.getElementById("Category2").setAttribute("hidden", "");
-            
-                document.getElementById("CategoryBtn3").classList.remove("active");
-                document.getElementById("Category3").setAttribute("hidden", "");
-            
             elm.classList.add("active");
             if(elm.id.replace("CategoryBtn", "") == "All"){
                 
                     document.getElementById("Category0").removeAttribute("hidden");
                 
                     document.getElementById("Category1").removeAttribute("hidden");
-                
-                    document.getElementById("Category2").removeAttribute("hidden");
-                
-                    document.getElementById("Category3").removeAttribute("hidden");
                 
             }else{
                 document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
