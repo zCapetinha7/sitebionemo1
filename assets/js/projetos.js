@@ -34,7 +34,7 @@ function projetos(section) {
           <p><b>𝐂𝐚𝐫𝐠𝐨𝐬:</b> Creator - Fundador</p>
         </div>
         <div class="card">
-<h3>StarsFamily™ ⭐</h3>
+<h3>STARSFAMILY™ ⭐</h3>
 <div class="img-wrapper">
   <img src="./assets/standard.gif" alt="Original Gifs" />
   <div class="buttons">
@@ -53,7 +53,7 @@ A StarsFamily é uma comunidade acolhedora, criada para proporcionar diversão, 
 <p><b>𝐂𝐚𝐫𝐠𝐨𝐬:</b> Fundador - Posse</p>
         </div>
         <div class="card">
-          <h3>Sininho ✨</h3>
+          <h3>SININHO ✨</h3>
 <div class="img-wrapper">
   <img src="./assets/Sininho.png" alt="Original Gifs" />
             <div class="buttons">
