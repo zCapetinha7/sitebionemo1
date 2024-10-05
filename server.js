@@ -1,4 +1,4 @@
-npm install express passport passport-discord express-session dotenv
+
 const express = require('express');
 const passport = require('passport');
 const DiscordStrategy = require('passport-discord').Strategy;
