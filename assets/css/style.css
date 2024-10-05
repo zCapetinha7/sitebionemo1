@@ -803,71 +803,79 @@ body.light-mode #home img#notebook-2-white {
 
 /*===== KNOWLEDGE ===============================================*/
 
-/* Estilo para os cartões */
-.wrapper {
-    padding: 50px 0;
-    height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.wrapper {
+    padding: 50px 0;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .cards {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
-    padding-top: 100px;
-    background: #111;
-    color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    transition: all 0.5s ease-in-out;
-    border-radius: 10px;
     position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
     overflow: hidden;
+    text-align: left;
+}
+
+.card:hover {
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    background-position: 80% 20%;
+    box-shadow: 0 0 15px #ff4, 0 0 20px #ff4;
 }
 
 .card img {
     max-width: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-radius: 50%;
 }
 
 .card h3 {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 16px;
-    padding: 0 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.card:hover {
-    background-position: 80% 20%;
-    transform: rotate3d(0.5, 1, 0, 30deg);
+.card a {
+    color: #ff4;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Estilo para o "date-box" */
-.date-box {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 60px;
-    width: 60px;
-    background-color: black;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.date-box .date {
-    font-size: 20px;
-    font-weight: 900;
-    color: #0088ff;
+.card a:hover {
+    color: #ff2;
 }
 
 /* Filtros aplicados aos diferentes cards */
