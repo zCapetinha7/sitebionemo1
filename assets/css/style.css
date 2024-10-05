@@ -871,9 +871,8 @@ body.light-mode #home img#notebook-2-white {
 }
 
 /* Aumentar o tamanho do título */
-#knowledge h2 {
-  font-size: 2.5rem; /* Aumentar o tamanho do título */
-  color: purple; /* Manter a cor original */
+#knowledge header h2 {
+  margin-bottom: 6rem;
 }
 
 /* Para a responsividade */
