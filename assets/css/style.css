@@ -802,7 +802,6 @@ body.light-mode #home img#notebook-2-white {
 }
 
 /*===== KNOWLEDGE ===============================================*/
-
 * {
     margin: 0;
     padding: 0;
@@ -842,93 +841,12 @@ body {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
     overflow: hidden;
-    text-align: le* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.wrapper {
-    padding: 50px 0;
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-}
-
-#knowledge .cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-#knowledge .card {
-    position: relative;
-    width: 300px;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-    overflow: hidden;
     text-align: left;
 }
 
-#knowledge .card:hover {
+.card:hover {
     transform: rotate3d(0.5, 1, 0, 30deg);
-    background-position: 80% 20%;
-    box-shadow: 0 0 15px #ff4, 0 0 20px #ff4;
-}
-
-#knowledge .card img {
-    max-width: 100px;
-    margin-bottom: 15px;
-    border-radius: 50%;
-}
-
-#knowledge .card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-#knowledge .card p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-#knowledge .card a {
-    color: #ff4;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#knowledge .card a:hover {
-    color: #ff2;
-}
-
-/* Filtros aplicados aos diferentes cards dentro da seção #knowledge */
-#knowledge .card2 {
-    filter: hue-rotate(150deg);
-}
-
-#knowledge .card3 {
-    filter: hue-rotate(300deg);
-}
-
-#knowledge .card4 {
-    filter: hue-rotate(90deg);
-}
+    background-position: 80% 20%
 
 /*===== CONTACT ===============================================*/
 
