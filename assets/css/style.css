@@ -802,8 +802,10 @@ body.light-mode #home img#notebook-2-white {
 }
 
 /*===== KNOWLEDGE ===============================================*/
+/* Estilos aplicados apenas na seção #knowledge */
+
 /* Título */
-.title {
+#knowledge .title {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 3rem;
@@ -815,20 +817,20 @@ body.light-mode #home img#notebook-2-white {
 }
 
 /* Estilo dos cartões */
-.wrapper {
+#knowledge .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.cards {
+#knowledge .cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.card {
+#knowledge .card {
   background-color: #1c1c1e;
   border-radius: 20px;
   width: 280px;
@@ -840,13 +842,13 @@ body.light-mode #home img#notebook-2-white {
   color: white;
 }
 
-.card:hover {
+#knowledge .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilo para a imagem de perfil */
-.profile-pic img {
+#knowledge .profile-pic img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -854,26 +856,26 @@ body.light-mode #home img#notebook-2-white {
   transition: transform 0.3s;
 }
 
-.card:hover .profile-pic img {
+#knowledge .card:hover .profile-pic img {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(138, 43, 226, 0.7); /* Efeito de brilho ao passar o mouse */
 }
 
 /* Estilo para os textos */
-h3 {
+#knowledge h3 {
   font-family: 'Poppins', sans-serif;
   color: #fff;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-h3 small {
+#knowledge h3 small {
   font-size: 0.8rem;
   color: #bbb;
   display: block;
 }
 
-p {
+#knowledge p {
   font-family: 'Roboto', sans-serif;
   color: #ccc;
   font-size: 1rem;
@@ -882,12 +884,12 @@ p {
 
 /* Para a responsividade */
 @media (max-width: 768px) {
-  .cards {
+  #knowledge .cards {
     flex-direction: column;
     align-items: center;
   }
 
-  .card {
+  #knowledge .card {
     width: 90%;
     margin-bottom: 20px;
   }
