@@ -804,18 +804,6 @@ body.light-mode #home img#notebook-2-white {
 /*===== KNOWLEDGE ===============================================*/
 /* Estilos aplicados apenas na seção #knowledge */
 
-/* Título */
-#knowledge .title {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  font-size: 3rem;
-  color: #8A2BE2; /* Roxo vibrante */
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-bottom: 40px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
 /* Estilo dos cartões */
 #knowledge .wrapper {
   display: flex;
@@ -865,7 +853,7 @@ body.light-mode #home img#notebook-2-white {
 #knowledge h3 {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Tamanho do texto do título do cartão */
   margin-bottom: 10px;
 }
 
@@ -880,6 +868,12 @@ body.light-mode #home img#notebook-2-white {
   color: #ccc;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+/* Aumentar o tamanho do título */
+#knowledge h2 {
+  font-size: 2.5rem; /* Aumentar o tamanho do título */
+  color: purple; /* Manter a cor original */
 }
 
 /* Para a responsividade */
