@@ -803,10 +803,60 @@ body.light-mode #home img#notebook-2-white {
 
 /*===== KNOWLEDGE ===============================================*/
 
+/* Estilo para os cartões */
+.wrapper {
+    padding: 50px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    padding-top: 100px;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+.card:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+/* Estilo para o "date-box" */
 .date-box {
     position: absolute;
-    top: 75px;
-    left: 25px;
+    top: 20px;
+    right: 20px;
     height: 60px;
     width: 60px;
     background-color: black;
@@ -820,6 +870,7 @@ body.light-mode #home img#notebook-2-white {
     color: #0088ff;
 }
 
+/* Filtros aplicados aos diferentes cards */
 .card2 {
     filter: hue-rotate(150deg);
 }
