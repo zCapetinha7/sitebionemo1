@@ -316,6 +316,29 @@
         </svg>
       </label>
     </div>
+<input type="text" id="searchBar" placeholder="Pesquisar servidor..." onkeyup="searchServers()" />
+
+<ul id="serverList">
+  <!-- Aqui será populado com a lista de servidores do usuário -->
+</ul>
+
+<script>
+  function searchServers() {
+    const input = document.getElementById('searchBar');
+    const filter = input.value.toUpperCase();
+    const ul = document.getElementById('serverList');
+    const li = ul.getElementsByTagName('li');
+
+    for (let i = 0; i < li.length; i++) {
+      const a = li[i].textContent || li[i].innerText;
+      if (a.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = '';
+      } else {
+        li[i].style.display = 'none';
+      }
+    }
+  }
+</script>
 
 <script>
   document.addEventListener("mousemove", function (e) {
