@@ -853,7 +853,7 @@ body.light-mode #home img#notebook-2-white {
 #knowledge h3 {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-size: 1.5rem; /* Tamanho do texto do título do cartão */
+  font-size: 1.8rem; /* Tamanho do texto do título do cartão */
   margin-bottom: 10px;
 }
 
@@ -866,7 +866,7 @@ body.light-mode #home img#notebook-2-white {
 #knowledge p {
   font-family: 'Roboto', sans-serif;
   color: #ccc;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
