@@ -802,39 +802,97 @@ body.light-mode #home img#notebook-2-white {
 }
 
 /*===== KNOWLEDGE ===============================================*/
-#knowledge header h2 {
-  margin-bottom: 6rem;
+/* Título */
+.title {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #8A2BE2; /* Roxo vibrante */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#knowledge .cards {
+/* Estilo dos cartões */
+.wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 3.2rem;
 }
 
-#knowledge .card {
-  padding: 2.8rem;
-  text-align: left;
-
-  background: var(--secundary-color);
-
-  border-radius: 0.6rem;
-  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
-
-  transition: 400ms;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-#knowledge .card:hover {
-  background: var(--third-color);
+.card {
+  background-color: #1c1c1e;
+  border-radius: 20px;
+  width: 280px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  color: white;
 }
 
-#knowledge .card h3 {
-  margin-block: 1.6rem;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
-#knowledge .card img {
-  width: 10rem;
+/* Estilo para a imagem de perfil */
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
 }
+
+.card:hover .profile-pic img {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.7); /* Efeito de brilho ao passar o mouse */
+}
+
+/* Estilo para os textos */
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+h3 small {
+  font-size: 0.8rem;
+  color: #bbb;
+  display: block;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Para a responsividade */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
 /*===== CONTACT ===============================================*/
 
 #contact {
