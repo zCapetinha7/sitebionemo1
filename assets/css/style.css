@@ -887,6 +887,44 @@ body.light-mode #home img#notebook-2-white {
     margin-bottom: 20px;
   }
 }
+/*===== BOTÃO LISTA DE AMIGO ===============================================*/
+
+.fancy-button {
+  background-color: #6A0DAD; /* Cor roxa */
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.fancy-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  transform: translateX(-100%) translateY(-100%) rotate(45deg);
+}
+
+.fancy-button:hover {
+  background-color: #551A8B; /* Tom de roxo mais escuro */
+  box-shadow: 0 6px 20px rgba(85, 26, 139, 0.5);
+}
+
+.fancy-button:hover::before {
+  transform: translateX(0) translateY(0);
+}
 
 /*===== CONTACT ===============================================*/
 
