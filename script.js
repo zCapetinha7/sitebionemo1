@@ -1,22 +1,18 @@
-// Defina o emoji que deseja usar como rastro
-const emoji = '💤'; 
+document.addEventListener('mousemove', function (e) {
+  // Criando o elemento span para o emoji
+  let emoji = document.createElement('span');
+  emoji.innerText = '🎶';
+  emoji.classList.add('emoji');
+  
+  // Posição do emoji com base no movimento do mouse
+  emoji.style.left = e.pageX + 'px';
+  emoji.style.top = e.pageY + 'px';
 
-// Função para criar o rastro
-function createEmojiTrail(e) {
-  const span = document.createElement('span'); // Cria um elemento <span>
-  span.textContent = emoji; // Adiciona o emoji
-  span.classList.add('emoji'); // Adiciona a classe 'emoji' para estilizar
-  document.body.appendChild(span); // Adiciona o span no corpo da página
+  // Adicionando o emoji ao body
+  document.body.appendChild(emoji);
 
-  // Posiciona o emoji na posição do mouse
-  span.style.left = e.pageX + 'px';
-  span.style.top = e.pageY + 'px';
-
-  // Remove o emoji após 1 segundo
-  setTimeout(() => {
-    span.remove();
-  }, 1000);
-}
-
-// Adiciona o listener para o evento de movimento do mouse
-document.addEventListener('mousemove', createEmojiTrail);
+  // Removendo o emoji após 1.5 segundos (tempo da animação)
+  setTimeout(function () {
+    emoji.remove();
+  }, 1500);
+});
