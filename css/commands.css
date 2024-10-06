@@ -5,10 +5,10 @@
 }
 :root {
 	--descreption-color: rgb(207, 207, 207);
-	--main-color: #a766f6;
+	--main-color: #222121;
 	--seacondry-color: #a766f6;
 	--discord-color: #a766f6;
-	--background-main-color: #a766f6;
+	--background-main-color: #222121;
 	--card-background: #a766f6;
 }
 
@@ -100,8 +100,8 @@ nav {
 }
 
 .btn-primary:hover {
-	background-color: ##7c14ff;
-	border: 1px solid ##7c14ff;
+	background-color: #7c14ff;
+	border: 1px solid #7c14ff;
 }
 .premium-tag {
 	background: linear-gradient(90deg, #6034a5 0%, #6034a5 100%);
