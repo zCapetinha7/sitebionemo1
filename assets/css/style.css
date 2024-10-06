@@ -889,11 +889,6 @@ body.light-mode #home img#notebook-2-white {
 }
 /*===== CURSOR ===============================================*/
 
-/* Cursor customizado */
-body {
-  cursor: url('https://via.placeholder.com/20/000000/FFFFFF/?text=+'), auto;
-}
-
 /* Cursor customizado com a imagem do cursor roxo */
 body {
   cursor: url('.assets/cursor.png'), auto;
