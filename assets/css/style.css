@@ -910,103 +910,61 @@ body.light-mode #home img#notebook-2-white {
   }
 }
 
-/*===== CONTACT ===============================================*/
+/*===== MÚSICA ===============================================*/
 
-#contact {
-  text-align: left;
-  background-color: var(--secundary-color);
+/* Estilos para a seção de músicas */
+.music-section {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-#contact .col-a {
+.music-section h2 {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.music-player {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin-bottom: 2rem;
 }
 
-#contact .col-a .content {
+.music-player .album-art img {
+  border-radius: 12px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Estilizando os botões de controle da música */
+.music-player .controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-#contact header {
-  margin-bottom: 3.2rem;
+.music-player .controls button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-#contact ul {
-  margin-bottom: 2rem;
+.music-player .controls button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
 }
 
-#contact ul a,
-#about .content a:nth-child(2) {
-  width: fit-content;
-
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  padding: 1rem;
-  border-radius: 0.8rem;
-
-  transition: 300ms;
-}
-
-#contact ul a {
-  color: var(--paragraph);
-}
-
-#contact ul a:hover {
-  background: var(--third-color);
-}
-
-#contact a path {
-  transition: 400ms;
-}
-
-#contact a.button path {
-  fill: var(--primary-color);
-}
-
-#contact a.button:hover path {
-  fill: #fff;
-}
-
-#contact ul li:nth-child(2) a img {
-  rotate: -15deg;
-}
-
-#contact ul li:nth-child(2) a path {
-  stroke: none;
-}
-
-#contact .col-b {
-  height: 38rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-#contact .col-b img {
-  width: 13rem;
-  animation: flutuar 2.5s infinite backwards;
-  filter: brightness(1.2);
-}
-
-#contact .col-b::after {
-  content: "";
-  display: block;
-
-  width: 13rem;
-  height: 5rem;
-
-  background-color: black;
-  border-radius: 100%;
+.music-player .controls button:active {
+  background-color: var(--secondary-color);
 }
 
 body.light-mode #contact .col-b::after {
