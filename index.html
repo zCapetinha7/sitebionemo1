@@ -204,8 +204,68 @@
     }
   });
 </script>
-    <section id="contact">
+   <!-- Player de música -->
+    <section id="music-player" style="text-align: center; margin-top: 50px;">
+      <h2>Músicas</h2>
+      <div id="music-info">
+        <img id="music-cover" src="assets/cover1.jpg" alt="Capa da música" width="200px" />
+        <h3 id="music-title">Música 1</h3>
+      </div>
+      <audio id="audio-player" controls>
+        <source src="assets/music1.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+      <br />
+      <button onclick="prevSong()">Anterior</button>
+      <button onclick="nextSong()">Próxima</button>
     </section>
+
+    <!-- Lista de músicas -->
+    <script>
+      const musicList = [
+        {
+          title: "Música 1",
+          src: "assets/music1.mp3",
+          cover: "assets/cover1.jpg"
+        },
+        {
+          title: "Música 2",
+          src: "assets/music2.mp3",
+          cover: "assets/cover2.jpg"
+        },
+        {
+          title: "Música 3",
+          src: "assets/music3.mp3",
+          cover: "assets/cover3.jpg"
+        }
+      ];
+
+      let currentSongIndex = 0;
+      const audioPlayer = document.getElementById('audio-player');
+      const musicTitle = document.getElementById('music-title');
+      const musicCover = document.getElementById('music-cover');
+
+      function loadSong(index) {
+        const song = musicList[index];
+        musicTitle.textContent = song.title;
+        audioPlayer.src = song.src;
+        musicCover.src = song.cover;
+        audioPlayer.play();
+      }
+
+      function prevSong() {
+        currentSongIndex = (currentSongIndex === 0) ? musicList.length - 1 : currentSongIndex - 1;
+        loadSong(currentSongIndex);
+      }
+
+      function nextSong() {
+        currentSongIndex = (currentSongIndex === musicList.length - 1) ? 0 : currentSongIndex + 1;
+        loadSong(currentSongIndex);
+      }
+
+      // Carrega a primeira música ao abrir a página
+      loadSong(currentSongIndex);
+    </script>
     <footer>
       <div class="wrapper">
         <div class="col-a">
