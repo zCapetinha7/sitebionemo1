@@ -887,21 +887,31 @@ body.light-mode #home img#notebook-2-white {
     margin-bottom: 20px;
   }
 }
-/*===== BOTÃO LISTA DE AMIGO ===============================================*/
+/*===== CURSOR ===============================================*/
 
-.button-navigate {
-  background-color: #6A0DAD; /* Cor roxa */
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Cursor customizado */
+body {
+  cursor: url('https://via.placeholder.com/20/000000/FFFFFF/?text=+'), auto;
 }
 
-.button-navigate:hover {
-  background-color: #551A8B; /* Tom de roxo mais escuro */
+/* Classe para os emojis */
+.emoji {
+  position: absolute;
+  font-size: 24px;
+  animation: disappear 1.5s forwards;
+  pointer-events: none;
+}
+
+/* Animação para desaparecer gradualmente */
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
 
 /*===== CONTACT ===============================================*/
