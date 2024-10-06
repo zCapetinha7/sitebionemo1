@@ -20,7 +20,7 @@
 
 /* Adjust navbar styles to look more like Discord */
 .navbar {
-    background-color: #36393f; /* Discord dark theme background color */
+    background-color: #a766f6; /* Discord dark theme background color */
     border-bottom: 1px solid #2f3136; /* Discord dark theme border color */
 }
 
@@ -58,8 +58,8 @@
 }
 
 .section-info a.btn:hover {
-    background-color: #677bc4; /* Discord brand color (darkened) */
-    border-color: #677bc4; /* Discord brand color (darkened) */
+    background-color: #a766f6; /* Discord brand color (darkened) */
+    border-color: #a766f6; /* Discord brand color (darkened) */
 }
 
 
@@ -115,7 +115,7 @@ hr {
 
 ::-webkit-scrollbar {
 	width: 10px;
-	color: #9432f6;
+	color: #a766f6;
 }
 
 ::-webkit-scrollbar-track {
