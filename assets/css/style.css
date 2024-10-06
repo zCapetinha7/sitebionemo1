@@ -888,10 +888,9 @@ body.light-mode #home img#notebook-2-white {
   }
 }
 /*===== CURSOR ===============================================*/
-
 /* Cursor customizado com a imagem do cursor roxo */
 body {
-  cursor: url('assets/cursor.png'), auto;
+  cursor: url('assets/cursor.png') 16 16, auto; /* Ajusta o ponto de clique */
 }
 
 /* Classe para os emojis */
