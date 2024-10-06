@@ -890,7 +890,7 @@ body.light-mode #home img#notebook-2-white {
 /*===== CURSOR ===============================================*/
 /* Cursor customizado com a imagem do cursor roxo */
 body {
-  cursor: url('assets/cursor.png') 16 16, auto; /* Ajusta o ponto de clique */
+  cursor: url('https://www.flaticon.com/br/icone-gratis/cursor_5300532?term=cursor&page=1&position=28&origin=tag&related_id=5300532') 16 16, auto; /* Ajusta o ponto de clique */
 }
 
 /* Classe para os emojis */
