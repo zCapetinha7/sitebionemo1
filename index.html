@@ -193,10 +193,26 @@
   <div class="wrapper">
 </section>
    
-<audio id="background-music" loop>
-  <source src="Invisivelpt2.mp3" type="audio/mpeg">
-  Seu navegador não suporta o elemento de áudio.
-</audio>
+<body>
+  <!-- Seu conteúdo -->
+
+  <!-- Player de música escondido -->
+  <audio id="background-music" loop>
+    <source src="Invisivelpt2.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <!-- Script para iniciar a música no clique -->
+  <script>
+    document.addEventListener("click", function() {
+      const music = document.getElementById('background-music');
+      if (music.paused) {
+        music.play();
+      }
+    }, { once: true });
+  </script>
+</body>
+
    
     <footer>
       <div class="wrapper">
