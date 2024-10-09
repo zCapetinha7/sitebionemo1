@@ -291,59 +291,7 @@
           />
         </svg>
       </label>
-    </div>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #87CEEB; /* Cor do fundo (cor de água) */
-    }
-
-    .aquarium {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .fish {
-        position: absolute;
-        width: 100px; /* Tamanho do peixinho */
-        animation: swim 8s linear infinite;
-    }
-
-    @keyframes swim {
-        0% {
-            transform: translateX(-100px) translateY(50%);
-        }
-        50% {
-            transform: translateX(100vw) translateY(20%);
-        }
-        100% {
-            transform: translateX(-100px) translateY(50%);
-        }
-    }
-</style>
-
-<div class="aquarium">
-    <img src="peixinho.png" class="fish" alt="Peixinho">
-</div>
-
-<script>
-    const fish = document.querySelector('.fish');
-
-    function randomizeMovement() {
-        const randomY = Math.random() * window.innerHeight;
-        const randomTime = Math.random() * 5000 + 5000; // Entre 5 e 10 segundos
-
-        fish.style.top = randomY + 'px';
-        fish.style.animationDuration = randomTime + 'ms';
-    }
-
-    setInterval(randomizeMovement, 8000); // A cada 8 segundos, muda a posição Y
-</script>
-                 
+    </div>       
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9843db71-4abb-4910-8eff-9ff91c214f69";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
                     <script src="script.js"></script>
