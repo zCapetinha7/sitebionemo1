@@ -909,41 +909,6 @@ body.light-mode #home img#notebook-2-white {
     transform: scale(0);
   }
 }
-
-
-/*===== ANIMAÇÃO PEIXE ===============================================*/
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #87CEEB; /* Cor do fundo (cor de água) */
-}
-
-.aquarium {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.fish {
-    position: absolute;
-    width: 100px; /* Tamanho do peixinho */
-    animation: swim 8s linear infinite;
-}
-
-@keyframes swim {
-    0% {
-        transform: translateX(-100px) translateY(50%);
-    }
-    50% {
-        transform: translateX(100vw) translateY(20%);
-    }
-    100% {
-        transform: translateX(-100px) translateY(50%);
-    }
-}
-
 /*===== CONTACT ===============================================*/
 
 #contact {
