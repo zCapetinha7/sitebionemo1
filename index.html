@@ -32,6 +32,33 @@
     <script type="module" src="./assets/js/main.js" defer></script>
 
     <title>Real Nemo</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent; /* Fundo transparente */
+      }
+
+      .fish {
+        position: absolute;
+        width: 150px; /* Tamanho do peixinho */
+        animation: fly 10s linear infinite;
+      }
+
+      @keyframes fly {
+        0% {
+          transform: translateX(-200px) translateY(20%);
+        }
+        50% {
+          transform: translateX(100vw) translateY(50%);
+        }
+        100% {
+          transform: translateX(-200px) translateY(80%);
+        }
+      }
+    </style>
+  </head>
   </head>
   <body>
     <nav id="navigation">
@@ -136,7 +163,10 @@
         </div>
       </div>
     </section>
-
+    
+    <!-- Adicione a imagem do peixe flutuante aqui -->
+    <img src="assets/images/fish.png" class="fish" alt="Peixe Flutuante" />
+    
     <section id="about">
       <div class="wrapper">
         <div class="col-a">
