@@ -16,3 +16,15 @@ document.addEventListener('mousemove', function (e) {
     emoji.remove();
   }, 1500);
 });
+  // Peixe
+const fish = document.querySelector('.fish');
+
+function randomizeMovement() {
+    const randomY = Math.random() * window.innerHeight;
+    const randomTime = Math.random() * 5000 + 5000; // Entre 5 e 10 segundos
+
+    fish.style.top = randomY + 'px';
+    fish.style.animationDuration = randomTime + 'ms';
+}
+
+setInterval(randomizeMovement, 8000); // A cada 8 segundos, muda a posição Y
