@@ -102,6 +102,18 @@
   font-size:13px;
   opacity:0.6;
 }
+#contact {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ajusta a altura para centralizar na tela */
+    padding: 20px; /* Adiciona algum espaçamento */
+}
+
+.wrapper {
+    max-width: 600px; /* Define uma largura máxima para a playlist */
+    width: 100%; /* Permite que a playlist seja responsiva */
+}
 hr {
   border: 1px solid aqua;
   margin: 1rem;
