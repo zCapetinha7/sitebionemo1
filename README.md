@@ -1,4 +1,4 @@
-<h1 align="center">Portifólio - Lucyan 💻</h1>
+<h1 align="center">Portifólio - Nemo  💻</h1>
 
 ![Imagem do projeto finalizado](assets/images/projects/portifolio.png)
 
