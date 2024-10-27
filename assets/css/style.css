@@ -960,104 +960,44 @@ body.light-mode #home img#notebook-2-white {
 /*===== CONTACT ===============================================*/
 
 #contact {
+  background-color: #111; /* Fundo preto */
+  padding: 40px 0;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text-section {
+  flex: 1;
   text-align: left;
-  background-color: var(--secundary-color);
+  padding: 20px;
+  color: #fff;
 }
 
-#contact .col-a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin-bottom: 2rem;
+.text-section h2 {
+  font-size: 24px;
+  color: #A020F0; /* Roxo */
 }
 
-#contact .col-a .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.text-section p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-#contact header {
-  margin-bottom: 3.2rem;
-}
-
-#contact ul {
-  margin-bottom: 2rem;
-}
-
-#contact ul a,
-#about .content a:nth-child(2) {
-  width: fit-content;
-
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  padding: 1rem;
-  border-radius: 0.8rem;
-
-  transition: 300ms;
-}
-
-#contact ul a {
-  color: var(--paragraph);
-}
-
-#contact ul a:hover {
-  background: var(--third-color);
-}
-
-#contact a path {
-  transition: 400ms;
-}
-
-#contact a.button path {
-  fill: var(--primary-color);
-}
-
-#contact a.button:hover path {
-  fill: #fff;
-}
-
-#contact ul li:nth-child(2) a img {
-  rotate: -15deg;
-}
-
-#contact ul li:nth-child(2) a path {
-  stroke: none;
-}
-
-#contact .col-b {
-  height: 38rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-#contact .col-b img {
-  width: 13rem;
-  animation: flutuar 2.5s infinite backwards;
-  filter: brightness(1.2);
-}
-
-#contact .col-b::after {
-  content: "";
-  display: block;
-
-  width: 13rem;
-  height: 5rem;
-
-  background-color: black;
-  border-radius: 100%;
-}
-
-body.light-mode #contact .col-b::after {
-  background-color: grey;
+.spotify-section {
+  flex: 1;
+  max-width: 352px;
 }
 
 /*===== FOOTER ===============================================*/
