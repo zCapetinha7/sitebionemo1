@@ -33,7 +33,6 @@
 
     <title>Real Nemo</title>
   </head>
-  </head>
   <body>
     <nav id="navigation">
       <div class="wrapper">
@@ -291,6 +290,30 @@ Feliz aquele que superou seu ego.
     AOS.init({
         duration: 800, // duração da animação
         once: true, // anima apenas uma vez por seção
+    });
+</script>
+                  <script>
+    function createStar(x, y) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.style.left = `${x}px`;
+        star.style.top = `${y + window.scrollY}px`;
+        document.body.appendChild(star);
+        setTimeout(() => star.remove(), 1500); // remove estrela após 1.5 segundos
+    }
+
+    function generateRandomStars(count) {
+        for (let i = 0; i < count; i++) {
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * document.body.scrollHeight;
+            createStar(x, y);
+        }
+    }
+
+    generateRandomStars(150);
+
+    document.addEventListener('click', function(e) {
+        createStar(e.pageX, e.pageY);
     });
 </script>
  </body>
