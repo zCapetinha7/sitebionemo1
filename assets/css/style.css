@@ -848,7 +848,24 @@ body.light-mode #home img#notebook-2-white {
 #projects .button {
   margin: 6rem auto 0;
 }
+/*===== ESTRELAS ===============================================*/
+<style>
+    .star {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        animation: twinkle 1.5s infinite alternate;
+        pointer-events: none;
+    }
 
+    @keyframes twinkle {
+        0% { opacity: 0.2; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1.2); }
+    }
+</style>
 /*===== KNOWLEDGE ===============================================*/
 /* Estilos aplicados apenas na seção #knowledge */
 
