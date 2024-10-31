@@ -1,7 +1,7 @@
 document.addEventListener('mousemove', function (e) {
   // Criando o elemento span para o emoji
   let emoji = document.createElement('span');
-  emoji.innerText = '🎶';
+  emoji.innerText = '💸';
   emoji.classList.add('emoji');
   
   // Posição do emoji com base no movimento do mouse
