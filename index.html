@@ -116,61 +116,6 @@
         </button>
       </div>
     </nav>
-   <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            overflow: hidden;
-            background-color: #000;
-            cursor: pointer;
-        }
-
-        .star {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background-color: white;
-            border-radius: 50%;
-            opacity: 0.8;
-            animation: twinkle 1.5s infinite alternate;
-        }
-
-        @keyframes twinkle {
-            0% { opacity: 0.2; transform: scale(0.8); }
-            100% { opacity: 1; transform: scale(1.2); }
-        }
-    </style>
-</head>
-<body>
-    <script>
-        // Função para criar uma estrela em uma posição específica
-        function createStar(x, y) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-            star.style.left = `${x}px`;
-            star.style.top = `${y}px`;
-
-            document.body.appendChild(star);
-        }
-
-        // Função para gerar várias estrelas aleatórias no fundo do site
-        function generateRandomStars(count) {
-            for (let i = 0; i < count; i++) {
-                const x = Math.random() * window.innerWidth;
-                const y = Math.random() * window.innerHeight;
-                createStar(x, y);
-            }
-        }
-
-        // Gera estrelas iniciais
-        generateRandomStars(100);
-
-        // Adiciona uma nova estrela ao clicar
-        document.addEventListener('click', function(e) {
-            createStar(e.pageX, e.pageY);
-        });
-    </script>
-</body>
     <section id="home">
       <div class="wrapper">
         <div class="col-a">
@@ -243,7 +188,61 @@
     </div>
   </div> 
 </section>
+   <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+            cursor: pointer;
+        }
 
+        .star {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: twinkle 1.5s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.2; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Função para criar uma estrela em uma posição específica
+        function createStar(x, y) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = `${x}px`;
+            star.style.top = `${y}px`;
+
+            document.body.appendChild(star);
+        }
+
+        // Função para gerar várias estrelas aleatórias no fundo do site
+        function generateRandomStars(count) {
+            for (let i = 0; i < count; i++) {
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+                createStar(x, y);
+            }
+        }
+
+        // Gera estrelas iniciais
+        generateRandomStars(100);
+
+        // Adiciona uma nova estrela ao clicar
+        document.addEventListener('click', function(e) {
+            createStar(e.pageX, e.pageY);
+        });
+    </script>
+</body>
 <section id="contact">
       <div class="wrapper">
         <div class="col-a">
