@@ -116,7 +116,7 @@
         </button>
       </div>
     </nav>
-    <style>
+   <style>
         body {
             margin: 0;
             height: 100vh;
@@ -124,36 +124,55 @@
             background-color: #000;
             cursor: pointer;
         }
-        
+
         .star {
             position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: yellow;
+            width: 4px;
+            height: 4px;
+            background-color: white;
             border-radius: 50%;
-            animation: twinkle 0.5s infinite alternate;
             opacity: 0.8;
+            animation: twinkle 1.5s infinite alternate;
         }
 
         @keyframes twinkle {
-            from { opacity: 0.2; transform: scale(0.5); }
-            to { opacity: 1; transform: scale(1.2); }
+            0% { opacity: 0.2; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1.2); }
         }
     </style>
 </head>
 <body>
     <script>
-        document.addEventListener('click', function(e) {
+        // Função para criar uma estrela em uma posição específica
+        function createStar(x, y) {
             const star = document.createElement('div');
             star.classList.add('star');
-            star.style.left = `${e.pageX - 5}px`;
-            star.style.top = `${e.pageY - 5}px`;
-            
+            star.style.left = `${x}px`;
+            star.style.top = `${y}px`;
+
             document.body.appendChild(star);
 
+            // Remove a estrela após um tempo para evitar acúmulo de elementos
             setTimeout(() => {
                 star.remove();
-            }, 1000);
+            }, 3000);
+        }
+
+        // Função para gerar várias estrelas aleatórias no fundo do site
+        function generateRandomStars(count) {
+            for (let i = 0; i < count; i++) {
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+                createStar(x, y);
+            }
+        }
+
+        // Gera estrelas iniciais
+        generateRandomStars(100);
+
+        // Adiciona uma nova estrela ao clicar
+        document.addEventListener('click', function(e) {
+            createStar(e.pageX, e.pageY);
         });
     </script>
 </body>
@@ -165,8 +184,9 @@
             <h1>Eu sou o Nemo,</h1>
           </header>
           <div class="content">
-            <p class="line typing">Um peixinho muito lindooooooooo</p>
-      </div>
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
+              </div>
     </div>
         <div class="col-b">
            <img
