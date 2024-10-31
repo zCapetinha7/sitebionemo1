@@ -116,7 +116,47 @@
         </button>
       </div>
     </nav>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+            cursor: pointer;
+        }
+        
+        .star {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-radius: 50%;
+            animation: twinkle 0.5s infinite alternate;
+            opacity: 0.8;
+        }
 
+        @keyframes twinkle {
+            from { opacity: 0.2; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('click', function(e) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = `${e.pageX - 5}px`;
+            star.style.top = `${e.pageY - 5}px`;
+            
+            document.body.appendChild(star);
+
+            setTimeout(() => {
+                star.remove();
+            }, 1000);
+        });
+    </script>
+</body>
     <section id="home">
       <div class="wrapper">
         <div class="col-a">
