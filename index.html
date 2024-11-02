@@ -33,49 +33,67 @@
 
     <title>Real Nemo</title>
 
-    <!-- Estilos do fundo estrelado -->
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        font-family: Arial, sans-serif;
-        position: relative;
-      }
+ <style>
+    /* Fundo de estrelas fixo */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
-      /* Fundo estrelado */
-      #starry-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        pointer-events: none;
-        overflow: hidden;
-        z-index: -1;
-      }
+    .star-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* para que as estrelas não bloqueiem a interação com os elementos */
+      z-index: -1; /* Coloca o fundo das estrelas atrás do conteúdo */
+      overflow: hidden;
+    }
 
-      /* Estrelas */
-      .star {
-        position: absolute;
-        width: 2px;
-        height: 2px;
-        background-color: white;
-        border-radius: 50%;
-        opacity: 0;
-        animation: twinkle 2s infinite ease-in-out;
-      }
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out alternate;
+    }
 
-      /* Animação de piscar */
-      @keyframes twinkle {
-        0%, 100% { opacity: 0; }
-        50% { opacity: 1; }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Fundo estrelado -->
-    <div id="starry-background"></div>
+    /* Animação de piscar */
+    @keyframes twinkle {
+      from { opacity: 1; }
+      to { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Adiciona o fundo de estrelas no body -->
+  <div class="star-background"></div>
+
+  <!-- Conteúdo do site -->
+  <nav id="navigation">
+    <!-- seu conteúdo de navegação -->
+  </nav>
+
+  <!-- Suas outras seções -->
+  
+  <script>
+    // JavaScript para gerar estrelas aleatórias
+    const starContainer = document.querySelector('.star-background');
+    const starCount = 100; // Número de estrelas
+
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      const size = Math.random() * 3 + 1 + 'px'; // Tamanho aleatório
+      star.style.width = size;
+      star.style.height = size;
+      star.style.top = Math.random() * 100 + 'vh'; // Posição vertical aleatória
+      star.style.left = Math.random() * 100 + 'vw'; // Posição horizontal aleatória
+      star.style.animationDelay = Math.random() * 2 + 's'; // Atraso de animação aleatório
+      starContainer.appendChild(star);
+    }
+  </script>
 
     <nav id="navigation">
       <div class="wrapper">
