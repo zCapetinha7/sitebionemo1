@@ -207,30 +207,83 @@ Feliz aquele que superou seu ego.
     </div>
   </div> 
 </section>
-                      <script>
-    function createStar(x, y) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        star.style.left = `${x}px`;
-        star.style.top = `${y + window.scrollY}px`;
-        document.body.appendChild(star);
-        setTimeout(() => star.remove(), 1500); // remove estrela após 1.5 segundos
-    }
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+        position: relative;
+      }
 
-    function generateRandomStars(count) {
-        for (let i = 0; i < count; i++) {
-            const x = Math.random() * window.innerWidth;
-            const y = Math.random() * document.body.scrollHeight;
-            createStar(x, y);
-        }
-    }
+      /* Estrelas piscantes no fundo */
+      #starry-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: -1;
+      }
 
-    generateRandomStars(150);
+      .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0;
+        animation: twinkle 2s infinite ease-in-out;
+      }
 
-    document.addEventListener('click', function(e) {
-        createStar(e.pageX, e.pageY);
-    });
-</script>
+      /* Animação de piscar */
+      @keyframes twinkle {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Contêiner do fundo estrelado -->
+    <div id="starry-background"></div>
+
+    <!-- Conteúdo do site -->
+    <section id="home">
+      <!-- Seu conteúdo aqui -->
+    </section>
+
+    <!-- Script para criar estrelas aleatórias -->
+    <script>
+      const numStars = 100; // Número de estrelas no fundo
+      const starryBackground = document.getElementById("starry-background");
+
+      function createStar() {
+        const star = document.createElement("div");
+        star.classList.add("star");
+
+        // Posição e animação aleatórias
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.top = Math.random() * 100 + "vh";
+        star.style.animationDuration = 1 + Math.random() * 2 + "s";
+        star.style.animationDelay = Math.random() * 5 + "s";
+
+        starryBackground.appendChild(star);
+      }
+
+      // Gerar as estrelas
+      for (let i = 0; i < numStars; i++) {
+        createStar();
+      }
+
+      // Manter o fundo na tela mesmo ao rolar
+      document.addEventListener("scroll", () => {
+        starryBackground.style.top = window.scrollY + "px";
+      });
+    </script>
+  </body>
 <section id="contact">
       <div class="wrapper">
         <div class="col-a">
