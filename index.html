@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,8 +32,51 @@
     <script type="module" src="./assets/js/main.js" defer></script>
 
     <title>Real Nemo</title>
+
+    <!-- Estilos do fundo estrelado -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+        position: relative;
+      }
+
+      /* Fundo estrelado */
+      #starry-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      /* Estrelas */
+      .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0;
+        animation: twinkle 2s infinite ease-in-out;
+      }
+
+      /* Animação de piscar */
+      @keyframes twinkle {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+    </style>
   </head>
   <body>
+    <!-- Fundo estrelado -->
+    <div id="starry-background"></div>
+
     <nav id="navigation">
       <div class="wrapper">
         <a class="logo close" href="#home"> 𝗥𝗲𝗮𝗹 𝗡𝗲𝗺𝗼 </a>
@@ -46,9 +89,7 @@
               <a id="projectsNav" class="close" href="https://youtu.be/dkWyAlBUY20?si=kySS5i2LsmhxqAn2">𝗬𝗼𝘂𝘁𝘂𝗯𝗲</a>
             </li>
             <li>
-              <a id="knowledgeNav" class="close" href="https://discord.gg/2vpK7UPzyB"
-                >𝗗𝗶𝘀𝗰𝗼𝗿𝗱</a
-              >
+              <a id="knowledgeNav" class="close" href="https://discord.gg/2vpK7UPzyB">𝗗𝗶𝘀𝗰𝗼𝗿𝗱</a>
             </li>
             <li>
               <a id="contactNav" class="close" href="https://www.threads.net/@realbeeh">𝗧𝗵𝗿𝗲𝗮𝗱𝘀</a>
@@ -207,83 +248,7 @@ Feliz aquele que superou seu ego.
     </div>
   </div> 
 </section>
-    
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        font-family: Arial, sans-serif;
-        position: relative;
-      }
 
-      /* Estrelas piscantes no fundo */
-      #starry-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        pointer-events: none;
-        overflow: hidden;
-        z-index: -1;
-      }
-
-      .star {
-        position: absolute;
-        width: 2px;
-        height: 2px;
-        background-color: white;
-        border-radius: 50%;
-        opacity: 0;
-        animation: twinkle 2s infinite ease-in-out;
-      }
-
-      /* Animação de piscar */
-      @keyframes twinkle {
-        0%, 100% { opacity: 0; }
-        50% { opacity: 1; }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Contêiner do fundo estrelado -->
-    <div id="starry-background"></div>
-
-    <!-- Conteúdo do site -->
-    <section id="home">
-      <!-- Seu conteúdo aqui -->
-    </section>
-
-    <!-- Script para criar estrelas aleatórias -->
-    <script>
-      const numStars = 100; // Número de estrelas no fundo
-      const starryBackground = document.getElementById("starry-background");
-
-      function createStar() {
-        const star = document.createElement("div");
-        star.classList.add("star");
-
-        // Posição e animação aleatórias
-        star.style.left = Math.random() * 100 + "vw";
-        star.style.top = Math.random() * 100 + "vh";
-        star.style.animationDuration = 1 + Math.random() * 2 + "s";
-        star.style.animationDelay = Math.random() * 5 + "s";
-
-        starryBackground.appendChild(star);
-      }
-
-      // Gerar as estrelas
-      for (let i = 0; i < numStars; i++) {
-        createStar();
-      }
-
-      // Manter o fundo na tela mesmo ao rolar
-      document.addEventListener("scroll", () => {
-        starryBackground.style.top = window.scrollY + "px";
-      });
-    </script>
-  </body>
 <section id="contact">
       <div class="wrapper">
         <div class="col-a">
