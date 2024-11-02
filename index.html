@@ -77,52 +77,42 @@
 
   <!-- Suas outras seções -->
 
-  <script>
-    // Container para fundo fixo de estrelas
-    const starContainer = document.querySelector('.star-background');
-    const starCount = 100; // Número de estrelas iniciais
+ <style>
+      body {
+        background-color: #000;
+        overflow: hidden;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        cursor: pointer;
+      }
 
-    // Função para criar estrelas aleatórias inicialmente
-    function createRandomStars() {
-      for (let i = 0; i < starCount; i++) {
+      .star {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        animation: twinkle 2s infinite alternate;
+      }
+
+      @keyframes twinkle {
+        0% { opacity: 1; }
+        100% { opacity: 0.3; }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener('click', function (e) {
         const star = document.createElement('div');
         star.classList.add('star');
-        const size = Math.random() * 3 + 1 + 'px'; // Tamanho aleatório
-        star.style.width = size;
-        star.style.height = size;
-        star.style.top = Math.random() * 100 + 'vh'; // Posição vertical aleatória
-        star.style.left = Math.random() * 100 + 'vw'; // Posição horizontal aleatória
-        star.style.animationDelay = Math.random() * 2 + 's'; // Atraso de animação aleatório
-        starContainer.appendChild(star);
-      }
-    }
-
-    // Função para criar uma estrela no local do clique
-    function createStarAtClick(x, y) {
-      const star = document.createElement('div');
-      star.classList.add('star');
-      const size = Math.random() * 5 + 3 + 'px'; // Tamanho da estrela no clique
-      star.style.width = size;
-      star.style.height = size;
-      star.style.top = y + 'px';
-      star.style.left = x + 'px';
-      star.style.animationDelay = '0s';
-      document.body.appendChild(star);
-
-      // Remove a estrela após 3 segundos para evitar sobrecarga na página
-      setTimeout(() => {
-        star.remove();
-      }, 3000);
-    }
-
-    // Inicializa as estrelas fixas
-    createRandomStars();
-
-    // Adiciona evento de clique para criar estrela no local clicado
-    document.addEventListener('click', (event) => {
-      createStarAtClick(event.clientX, event.clientY);
-    });
-  </script>
+        star.style.left = `${e.pageX}px`;
+        star.style.top = `${e.pageY}px`;
+        document.body.appendChild(star);
+      });
+    </script>
 </body>
 
     <nav id="navigation">
@@ -250,26 +240,6 @@ Feliz aquele que superou seu ego.
     <section id="projects">
         <div class="wrapper">
     </section>
-    <section id="social-media">
-    <div class="wrapper">
-        <h2>Minhas Redes Sociais</h2>
-        <div class="social-links">
-            <a href="https://instagram.com/realbeeh" target="_blank" class="social-icon instagram" aria-label="Instagram">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Ícone do Instagram">
-            </a>
-            <a href="https://www.youtube.com/user/realbeeh" target="_blank" class="social-icon youtube" aria-label="YouTube">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Ícone do YouTube">
-            </a>
-            <a href="https://twitter.com/realbeeh" target="_blank" class="social-icon twitter" aria-label="Twitter">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Ícone do Twitter">
-            </a>
-            <a href="https://www.threads.net/@realbeeh" target="_blank" class="social-icon threads" aria-label="Threads">
-                <img src="https://cdn-icons-png.flaticon.com/512/4373/4373882.png" alt="Ícone do Threads">
-            </a>
-            <!-- Adicione mais links conforme necessário -->
-        </div>
-    </div>
-</section>
 <section id="knowledge">
   <div class="wrapper">
     <header>
