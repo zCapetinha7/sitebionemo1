@@ -33,23 +33,22 @@
 
     <title>Real Nemo</title>
 
- <style>
+   <style>
       body {
         background-color: #000;
-        overflow: hidden;
+        overflow-x: hidden;
         margin: 0;
         height: 100vh;
-        width: 100vw;
         cursor: pointer;
       }
 
       .star {
         position: absolute;
-        width: 8px;
-        height: 8px;
+        width: 4px; /* Menor tamanho */
+        height: 4px;
         background-color: #fff;
         border-radius: 50%;
-        box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
         animation: twinkle 2s infinite alternate;
       }
 
@@ -73,20 +72,28 @@
       // Cria várias estrelas aleatórias ao carregar a página
       function createRandomStars(count) {
         for (let i = 0; i < count; i++) {
-          const x = Math.random() * window.innerWidth;
-          const y = Math.random() * window.innerHeight;
+          const x = Math.random() * document.documentElement.scrollWidth;
+          const y = Math.random() * document.documentElement.scrollHeight;
           createStar(x, y);
         }
       }
 
-      // Cria estrelas aleatórias no início
-      createRandomStars(100);
+      // Inicializa 200 estrelas aleatórias no site
+      createRandomStars(200);
 
       // Cria uma estrela onde o usuário clica
       document.addEventListener('click', function (e) {
         createStar(e.pageX, e.pageY);
       });
+
+      // Adapta o layout para gerar mais estrelas ao rolar para o final da página
+      window.addEventListener('scroll', function () {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+          createRandomStars(50); // Adiciona mais 50 estrelas quando se aproxima do fim da página
+        }
+      });
     </script>
+  </body>
     <nav id="navigation">
       <div class="wrapper">
         <a class="logo close" href="#home"> 𝗥𝗲𝗮𝗹 𝗡𝗲𝗺𝗼 </a>
