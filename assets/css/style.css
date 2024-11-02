@@ -866,6 +866,44 @@ body.light-mode #home img#notebook-2-white {
         100% { opacity: 1; transform: scale(1.2); }
     }
 </style>
+/*===== REDES ===============================================*/
+#social-media {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#social-media h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links .social-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.social-links .social-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.social-links .social-icon:hover {
+    transform: scale(1.1);
+}
 /*===== KNOWLEDGE ===============================================*/
 /* Estilos aplicados apenas na seção #knowledge */
 
