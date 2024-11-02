@@ -33,50 +33,6 @@
 
     <title>Real Nemo</title>
 
-  <style>
-    /* Fundo fixo */
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      position: relative;
-    }
-
-    .star-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none; /* Para que as estrelas não bloqueiem interação */
-      z-index: -1; /* Coloca o fundo das estrelas atrás do conteúdo */
-    }
-
-    .star {
-      position: absolute;
-      background: white;
-      border-radius: 50%;
-      animation: twinkle 2s infinite ease-in-out alternate;
-    }
-
-    /* Animação de piscar */
-    @keyframes twinkle {
-      from { opacity: 1; }
-      to { opacity: 0.3; }
-    }
-  </style>
-</head>
-<body>
-  <!-- Adiciona o fundo fixo de estrelas no body -->
-  <div class="star-background"></div>
-
-  <!-- Conteúdo do site -->
-  <nav id="navigation">
-    <!-- Seu conteúdo de navegação -->
-  </nav>
-
-  <!-- Suas outras seções -->
-
  <style>
       body {
         background-color: #000;
@@ -105,16 +61,32 @@
   </head>
   <body>
     <script>
-      document.addEventListener('click', function (e) {
+      // Função para criar uma estrela em uma posição específica
+      function createStar(x, y) {
         const star = document.createElement('div');
         star.classList.add('star');
-        star.style.left = `${e.pageX}px`;
-        star.style.top = `${e.pageY}px`;
+        star.style.left = `${x}px`;
+        star.style.top = `${y}px`;
         document.body.appendChild(star);
+      }
+
+      // Cria várias estrelas aleatórias ao carregar a página
+      function createRandomStars(count) {
+        for (let i = 0; i < count; i++) {
+          const x = Math.random() * window.innerWidth;
+          const y = Math.random() * window.innerHeight;
+          createStar(x, y);
+        }
+      }
+
+      // Cria estrelas aleatórias no início
+      createRandomStars(100);
+
+      // Cria uma estrela onde o usuário clica
+      document.addEventListener('click', function (e) {
+        createStar(e.pageX, e.pageY);
       });
     </script>
-</body>
-
     <nav id="navigation">
       <div class="wrapper">
         <a class="logo close" href="#home"> 𝗥𝗲𝗮𝗹 𝗡𝗲𝗺𝗼 </a>
