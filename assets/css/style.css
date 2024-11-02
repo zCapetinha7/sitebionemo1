@@ -664,6 +664,8 @@ body.light-mode #home img#notebook-2-white {
   text-align: left;
 }
 
+background-color: var(--secundary-color);
+
 #about .content p {
   margin-block: 2.4rem;
 }
