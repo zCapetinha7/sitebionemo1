@@ -33,12 +33,13 @@
 
     <title>Real Nemo</title>
 
- <style>
-    /* Fundo de estrelas fixo */
+  <style>
+    /* Fundo fixo */
     body {
       margin: 0;
       padding: 0;
       overflow-x: hidden;
+      position: relative;
     }
 
     .star-background {
@@ -47,9 +48,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none; /* para que as estrelas não bloqueiem a interação com os elementos */
+      pointer-events: none; /* Para que as estrelas não bloqueiem interação */
       z-index: -1; /* Coloca o fundo das estrelas atrás do conteúdo */
-      overflow: hidden;
     }
 
     .star {
@@ -67,33 +67,63 @@
   </style>
 </head>
 <body>
-  <!-- Adiciona o fundo de estrelas no body -->
+  <!-- Adiciona o fundo fixo de estrelas no body -->
   <div class="star-background"></div>
 
   <!-- Conteúdo do site -->
   <nav id="navigation">
-    <!-- seu conteúdo de navegação -->
+    <!-- Seu conteúdo de navegação -->
   </nav>
 
   <!-- Suas outras seções -->
-  
-  <script>
-    // JavaScript para gerar estrelas aleatórias
-    const starContainer = document.querySelector('.star-background');
-    const starCount = 100; // Número de estrelas
 
-    for (let i = 0; i < starCount; i++) {
+  <script>
+    // Container para fundo fixo de estrelas
+    const starContainer = document.querySelector('.star-background');
+    const starCount = 100; // Número de estrelas iniciais
+
+    // Função para criar estrelas aleatórias inicialmente
+    function createRandomStars() {
+      for (let i = 0; i < starCount; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        const size = Math.random() * 3 + 1 + 'px'; // Tamanho aleatório
+        star.style.width = size;
+        star.style.height = size;
+        star.style.top = Math.random() * 100 + 'vh'; // Posição vertical aleatória
+        star.style.left = Math.random() * 100 + 'vw'; // Posição horizontal aleatória
+        star.style.animationDelay = Math.random() * 2 + 's'; // Atraso de animação aleatório
+        starContainer.appendChild(star);
+      }
+    }
+
+    // Função para criar uma estrela no local do clique
+    function createStarAtClick(x, y) {
       const star = document.createElement('div');
       star.classList.add('star');
-      const size = Math.random() * 3 + 1 + 'px'; // Tamanho aleatório
+      const size = Math.random() * 5 + 3 + 'px'; // Tamanho da estrela no clique
       star.style.width = size;
       star.style.height = size;
-      star.style.top = Math.random() * 100 + 'vh'; // Posição vertical aleatória
-      star.style.left = Math.random() * 100 + 'vw'; // Posição horizontal aleatória
-      star.style.animationDelay = Math.random() * 2 + 's'; // Atraso de animação aleatório
-      starContainer.appendChild(star);
+      star.style.top = y + 'px';
+      star.style.left = x + 'px';
+      star.style.animationDelay = '0s';
+      document.body.appendChild(star);
+
+      // Remove a estrela após 3 segundos para evitar sobrecarga na página
+      setTimeout(() => {
+        star.remove();
+      }, 3000);
     }
+
+    // Inicializa as estrelas fixas
+    createRandomStars();
+
+    // Adiciona evento de clique para criar estrela no local clicado
+    document.addEventListener('click', (event) => {
+      createStarAtClick(event.clientX, event.clientY);
+    });
   </script>
+</body>
 
     <nav id="navigation">
       <div class="wrapper">
