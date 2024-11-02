@@ -353,5 +353,27 @@ Feliz aquele que superou seu ego.
         once: true, // anima apenas uma vez por seção
     });
 </script>
+                    <script>
+      const numStars = 100;
+      const starryBackground = document.getElementById("starry-background");
+
+      function createStar() {
+        const star = document.createElement("div");
+        star.classList.add("star");
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.top = Math.random() * 100 + "vh";
+        star.style.animationDuration = 1 + Math.random() * 2 + "s";
+        star.style.animationDelay = Math.random() * 5 + "s";
+        starryBackground.appendChild(star);
+      }
+
+      for (let i = 0; i < numStars; i++) {
+        createStar();
+      }
+
+      document.addEventListener("scroll", () => {
+        starryBackground.style.top = window.scrollY + "px";
+      });
+    </script>
  </body>
 </html>
